@@ -48,7 +48,8 @@ a {
 }
 
 a:hover {
-  color: #ffc732;
+  color: #681436;
+  /* color: #ffc732; */
   text-decoration: none;
 }
 
@@ -193,7 +194,8 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ffc732;
+  background: #681436;
+  /* background: #ffc732; */
   color: #fff;
 }
 
@@ -1669,9 +1671,9 @@ section {
   height: 56px;
   font-size: 24px;
   line-height: 0;
-  color: var(--color-primary);
+  color: var(--color-default);
   border-radius: 50%;
-  border: 2px dotted #ffd565;
+  border: 2px dotted var(--color-default);
 }
 
 .contact .info-item h3 {
@@ -2581,23 +2583,62 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients {
+  padding: 40px 0;
+}
+
+.clients .swiper {
+  padding: 10px 0;
+}
+
+.clients .swiper-slide img {
+  transition: 0.3s;
+}
+
+.clients .swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  background-color: #ddd;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background-color: var(--color-default);
+  /* background: url("../img/footer-bg.jpg") top center no-repeat; */
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
   position: relative;
 }
 
-.footer:before {
+/* .footer:before {
   content: "";
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   inset: 0;
-}
+} */
 
 .footer .footer-content .footer-info {
   margin-bottom: 30px;
@@ -2691,5 +2732,7 @@ section {
 }
 
 .footer .footer-legal .credits a {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
+  color: #fff;
+  text-decoration: underline;
 }
