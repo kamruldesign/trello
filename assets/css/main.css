@@ -19,9 +19,11 @@
 /* Colors */
 :root {
   --color-default: #681436;
-  --color-primary: #cf6690;
+  /* --color-primary: #B2B2B2; */
+  --color-primary: #6814365f;
   --color-secondary: #681436;
-  /* --color-default: #364d59;
+  /* --color-secondary: #681436;
+  --color-default: #364d59;
   --color-primary: #feb900;
   --color-secondary: #52565e; */
 }
