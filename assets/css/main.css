@@ -269,11 +269,12 @@ section {
   top: 0;
   left: 0;
   right: 0;
+  background-color: #fff;
 }
 
 .header .logo img {
-  max-height: 40px;
-  margin-right: 6px;
+  max-height: 80px;
+  margin-right: 10px;
 }
 
 .header .logo h1 {
@@ -284,8 +285,10 @@ section {
   font-family: var(--font-primary);
 }
 
-.header .logo h1 span {
-  color: var(--color-primary);
+.header .logo div h1 span {
+  /* color: var(--color-primary); */
+  color: #000;
+  /* color: #fff; */
 }
 
 /*--------------------------------------------------------------
@@ -320,9 +323,10 @@ section {
     justify-content: space-between;
     padding: 0 3px;
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    /* color: rgba(255, 255, 255, 0.6); */
+    color: var(--color-primary);
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
@@ -360,7 +364,8 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    /* color: #000; */
+    color: var(--color-default);
   }
 
   .navbar .dropdown ul {
@@ -1890,7 +1895,7 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   inset: 0;
 }
